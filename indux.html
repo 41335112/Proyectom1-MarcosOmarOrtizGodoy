@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Generador de paletas</title>
 </head>
+
 <body>
-    
+    <main class="contenedor">
+        <header class="titulo">
+            <h1 class="tituloPrincipal">Agencia Colorfly Studio</h1>
+            <p1>Generador De Paletas De Colores</p1>
+        </header>
+
+        <section class="opciones">
+            <label for="cantidad">Cantidad de colores</label>
+
+            <select id="cantidad">
+                <option value="6"> 6 colores </option>
+                <option value="8"> 8 colores </option>
+                <option value="9"> 9 colores </option>
+            </select>
+        </section>
+
+        <section class="formato">
+            <label for="formato"> Formato </label>
+
+            <select id="formato">
+                <option value="HEX">Formato HEX </option>
+                <option value="RGBA"> Formato RGBA </option>
+            </select>
+        </section>
+
+        <button class="generar">Generar paleta de colores </button>
+        <button class="guardar"> Guardar paleta de colores </button>
+        <button class="Eliminar"> Eliminar paletas de colores </button>
+    </main>
+
+    <footer>
+        <p>La Agencia de colorfly Studio es una empresa que se encarga de producir
+            propuestas visuales para mas de 300 clientes en distintas cuidades del pais y del mundo. 
+        </p>
+    </footer>
+
 </body>
 </html>
