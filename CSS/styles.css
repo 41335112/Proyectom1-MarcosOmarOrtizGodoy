@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+    font-style: 100%;
+}
+
+//variables 
+
+:root{
+  /*colores para el general del body*/
+ --color-fondo:  ;
+ --color-fondo-claro:  ;
+ --color-fondo-oscuro: ; 
+ 
+ /* colores para el titulo*/
+ --color-header: ;
+ --color-header-claro: ;
+ --color-header-oscuro: ;
+ 
+ /*colores neutros texto*/
+ --color-texto: ;
+ --color-texto-claro: ;
+  
+ /* espacios */
+ --espacio-xs: 0.5rem;
+ --espacio-sm: 1rem;
+ --espacio-md: 1.5rem;
+ --espacio-lg: 2rem;
+ --espacio-xl: 3rem;
+
+ /* bordes */
+ --borde-sm: 0.5rem;
+ --borde-md: 0.75rem;
+ --borde-lg: 1rem;
+}
