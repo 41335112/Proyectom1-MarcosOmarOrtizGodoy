@@ -6,16 +6,16 @@ html{
     font-style: 100%;
 }
 
-//variables 
+/* variables */ 
 
 :root{
   /*colores para el general del body*/
- --color-fondo:  ;
- --color-fondo-claro:  ;
- --color-fondo-oscuro: ; 
+ --color-fondo: hsl(240, 4%, 46%);
+ --color-fondo-claro:  hsl(240, 5%, 84%);
+ --color-fondo-oscuro: hsl(240, 4%, 16%); 
  
  /* colores para el titulo*/
- --color-header: ;
+ --color-header: hsl(216, 100%, 58%) ;
  --color-header-claro: ;
  --color-header-oscuro: ;
  
@@ -35,3 +35,30 @@ html{
  --borde-md: 0.75rem;
  --borde-lg: 1rem;
 }
+
+body{
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 1.2rem;
+ background-color: var(--color-fondo-claro);
+ 
+}
+/* header */
+header{
+    border-bottom: 2px solid black;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    gap: 300px;
+}
+
+.titulo img{
+ width: 250px;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+}
+
+
