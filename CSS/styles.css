@@ -101,3 +101,11 @@ select{
     cursor: pointer;
 }
 
+.botones{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
