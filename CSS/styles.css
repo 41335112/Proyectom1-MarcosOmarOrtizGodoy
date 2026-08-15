@@ -131,3 +131,23 @@ select{
   background-color: #6c5ce7;
   color: white
 }
+
+/*donde se va a mostrar los colores*/
+.generador {
+    width: 85%;
+    min-height: 350px;
+    margin: 40px auto;
+    padding: 30px;
+
+    background-color: #f8f9fa;
+
+    border: 2px solid #e0e0e0;
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
