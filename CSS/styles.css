@@ -63,15 +63,11 @@ header{
 /* damos forma a la parte de formato y cantidad de colores */
 .configuracion{
     display: flex;
-    gap: 20px;
+    gap: 15px;
     margin-bottom: 20px;
+    margin-top: 25px;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 30px;
-    width: 800px;
-    margin: 30px auto;
 }
 
 .opciones{
