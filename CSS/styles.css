@@ -65,20 +65,22 @@ header{
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .opciones{
     display: flex;
     flex-direction: column;
     gap: 8px;
-    flex: 1;
+    flex: 0.3;
 }
 
 .formato{
     display: flex;
     flex-direction: column;
     gap: 8px;
-    flex: 1;
+    flex: 0.3;
 }
 
 label{
