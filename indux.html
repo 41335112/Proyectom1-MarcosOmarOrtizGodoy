@@ -20,24 +20,27 @@
             
         </header>
 
-        <section class="opciones">
-            <label for="cantidad">Cantidad de colores</label>
-
-            <select id="cantidad">
+        <div class="configuracion">
+           <section class="opciones">
+             <label for="cantidad">Cantidad de Colores </label>
+              
+              <select id="cantidad">
                 <option value="6"> 6 colores </option>
                 <option value="8"> 8 colores </option>
                 <option value="9"> 9 colores </option>
-            </select>
-        </section>
+              </select>
 
-        <section class="formato">
-            <label for="formato"> Formato </label>
+            </section>
 
-            <select id="formato">
-                <option value="hex">Formato HEX </option>
-                <option value="rgba"> Formato RGBA </option>
-            </select>
-        </section>
+           <section class="formato">
+             <label for="formato">Seleccionar Formato</label>
+             <select id="formato">
+                <option value="hex"> Formato Hex </option>
+                <option value="rgba"> Formato Rgba </option>
+             </select>
+           </section>
+        </div>
+
 
         <button class="generar">Generar paleta de colores </button>
         <button class="guardar"> Guardar paleta de colores </button>
