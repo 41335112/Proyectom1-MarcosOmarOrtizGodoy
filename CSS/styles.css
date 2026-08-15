@@ -110,23 +110,28 @@ select{
     align-items: center;
 }
 
+.botones button{
+    padding: 12px 20px;
+    border: nome;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
 .generar{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    flex: 0.3;
+    background-color: #6c5ce7;
+    color: white
 }
 
 .guardar{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    flex: 0.3;
+    background-color: #6c5ce7;
+    color: white
 }
 
 .eliminar{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    flex: 0.3;
+  background-color: #6c5ce7;
+  color: white
 }
