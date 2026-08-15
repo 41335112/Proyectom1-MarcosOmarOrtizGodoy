@@ -67,6 +67,11 @@ header{
     margin-bottom: 20px;
     justify-content: center;
     align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 30px;
+    width: 800px;
+    margin: 30px auto;
 }
 
 .opciones{
