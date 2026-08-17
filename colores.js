@@ -1,9 +1,9 @@
 /* seleccionar los elementos */
 
-const cantidad = document.lastElementChild("#cantidad");
-const formato = document.lastElementChild ("#formato");
-const botonGenerar = document.lastElementChild (".generar");
-const generador = document.lastElementChild(".generador");
+const cantidad = document.querySelector("#cantidad");
+const formato = document.querySelector ("#formato");
+const botonGenerar = document.querySelector (".generar");
+const generador = document.querySelector(".generador");
 
 /*funciones que necesitamos:
 funcion generarHex();
@@ -18,7 +18,7 @@ function generarHex(){
 
     for(let i=0; i < 6; i++){
 
-        const nroAleatorio = Math.floor(Math.random()* 16);
+        const nroAleatorio = Math.floor(Math.random() * 16);
         color += caracteres[nroAleatorio];
     }
     return color;
@@ -26,6 +26,7 @@ function generarHex(){
 
 /* Funcion de color rgba */
 function generarRgba(){
+
     const r = Math.floor(Math.random() * 256);
     const g = Math.floor(Math.random() * 256);
     const b = Math.floor(Math.random() * 256);
@@ -51,6 +52,17 @@ function generarPaleta(){
         }else{
             color = generarRgba;
         }
-    }
+        
+        const cuadrado = document.createElement("div"); /* se crea el cuadro */
 
-}
+        cuadro.style.backgroundColor = color; /*le pone color al cuadrado */
+
+        cuadrado.classList.add("color"); /* se le agrega clase a a css */
+
+        cuadrado.textContent = color; /*mostrar el codigo */
+
+        generador.appendChild(cuadrado); /* se le agrega cuadrado al generador */
+    }
+}       
+
+botonGenerar.addEventListener("click", generarPaleta); /*boton generar */
