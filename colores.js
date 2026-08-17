@@ -1,9 +1,9 @@
 /* seleccionar los elementos */
 
-const cantidad = document.lastElementChild("cantidad");
-const formato = document.lastElementChild ("formato");
+const cantidad = document.lastElementChild("#cantidad");
+const formato = document.lastElementChild ("#formato");
 const botonGenerar = document.lastElementChild (".generar");
-const generador = document.lastElementChild(".gererador");
+const generador = document.lastElementChild(".generador");
 
 /*funciones que necesitamos:
 funcion generarHex();
@@ -32,4 +32,25 @@ function generarRgba(){
     const a = 1;
 
     return `rgba(${r}, ${g}, ${b}, ${a})`;
+}
+
+/* funcion de generar paletas */
+function generarPaleta(){
+    
+    const cantidadColores = Number(cantidad.value); /* da la eleccion de 6,8,9 colores*/
+    const formatoSeleccionado = formato.value; /* formato hex-rgba */
+
+    generador.innerHTML = "" ; /* limpia la paleta de colores anterior */
+
+    for(let i = 0; i < cantidadColores; i++){ /* GENERA LOS COLORES */
+        
+        let color;
+
+        if(formatoSeleccionado === "hex"){
+            color = generarHex;
+        }else{
+            color = generarRgba;
+        }
+    }
+
 }
