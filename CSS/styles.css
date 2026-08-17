@@ -10,14 +10,14 @@ html{
 
 :root{
   /*colores para el general del body*/
- --color-fondo: hsl(240, 4%, 46%);
- --color-fondo-claro:  hsl(240, 5%, 84%);
- --color-fondo-oscuro: hsl(240, 4%, 16%); 
+ --color-fondo: hsl(139, 61%, 49%);
+ --color-fondo-primario:  hsl(156, 65%, 51  %);
+ --color-fondo-oscuro: hsl(223, 48%, 11%); 
  
  /* colores para el titulo*/
- --color-header: hsl(216, 100%, 58%) ;
- --color-header-claro: ;
- --color-header-oscuro: ;
+ --color-titulo: hsl(240, 4%, 16%);
+ --color-titulo-claro: hsl(214, 32%, 91%);
+ --color-titulo-oscuro: hsl(240, 6%, 10%);
  
  /*colores neutros texto*/
  --color-texto: ;
@@ -39,7 +39,7 @@ html{
 body{
  font-family: Arial, Helvetica, sans-serif;
  font-size: 1.2rem;
- background-color: var(--color-fondo-claro);
+ background-color: var(--color-fondo);
  
 }
 /* header */
@@ -50,15 +50,19 @@ header{
     display: flex;
     align-items: center;
     gap: 300px;
+    background-color: var(--color-fondo-oscuro);
 }
 
 .titulo img{
  width: 250px;
 }
 
-.texto{
+.texto,
+h1,
+p1{
     display: flex;
     flex-direction: column;
+    color: var(--color-titulo-claro);
 }
 /* damos forma a la parte de formato y cantidad de colores */
 .configuracion{
