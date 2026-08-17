@@ -22,6 +22,10 @@ html{
  /*colores neutros texto*/
  --color-texto: ;
  --color-texto-claro: ;
+
+ /* colore para botones */
+ --color-boton: hsl(79, 89%, 89%);
+ --color-boton-fondo: hsl( 216, 100%, 58%);
   
  /* espacios */
  --espacio-xs: 0.5rem;
@@ -122,18 +126,18 @@ select{
 }
 
 .generar{
-    background-color: #6c5ce7;
-    color: white
+    background-color: var(--color-boton-fondo);
+    color: var(--color-boton);
 }
 
 .guardar{
-    background-color: #6c5ce7;
-    color: white
+    background-color: var(--color-boton-fondo);
+    color: var(--color-boton);
 }
 
 .eliminar{
-  background-color: #6c5ce7;
-  color: white
+  background-color: var(--color-boton-fondo);
+  color: var(--color-boton);
 }
 
 /*donde se va a mostrar los colores*/
