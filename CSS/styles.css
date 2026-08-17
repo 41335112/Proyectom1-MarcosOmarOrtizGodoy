@@ -18,10 +18,6 @@ html{
  --color-titulo: hsl(240, 4%, 16%);
  --color-titulo-claro: hsl(214, 32%, 91%);
  --color-titulo-oscuro: hsl(240, 6%, 10%);
- 
- /*colores neutros texto*/
- --color-texto: ;
- --color-texto-claro: ;
 
  /* colore para botones */
  --color-boton: hsl(79, 89%, 89%);
@@ -93,16 +89,19 @@ p1{
 }
 
 label{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
+    color: var(--color-titulo-oscuro);
 }
 
 select{
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-boton);
     border-radius: 8px;
-    font-size: 15px;
+    font-size: 20px;
     cursor: pointer;
+    background-color: var(--color-boton-fondo);
+    color: var(--color-boton);
 }
 
 .botones{
@@ -116,7 +115,7 @@ select{
 
 .botones button{
     padding: 12px 20px;
-    border: nome;
+    border: none;
     border-radius: 10px;
     font-size: 15px;
     font-weight: bold;
