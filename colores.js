@@ -48,14 +48,14 @@ function generarPaleta(){
         let color;
 
         if(formatoSeleccionado === "hex"){
-            color = generarHex;
+            color = generarHex();
         }else{
-            color = generarRgba;
+            color = generarRgba();
         }
         
         const cuadrado = document.createElement("div"); /* se crea el cuadro */
 
-        cuadro.style.backgroundColor = color; /*le pone color al cuadrado */
+        cuadrado.style.backgroundColor = color; /*le pone color al cuadrado */
 
         cuadrado.classList.add("color"); /* se le agrega clase a a css */
 
