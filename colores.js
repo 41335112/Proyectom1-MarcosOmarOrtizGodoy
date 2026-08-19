@@ -87,5 +87,17 @@ botonGenerar.addEventListener("click", generarPaleta); /*boton generar */
 
 function guardarColores(){
 
-    
+    const coloresSeleccionados = document.querySelectorAll(".seleccionado");
+
+    coloresGuardados = [];
+
+    coloresSeleccionados.forEach(function(cuadrado){
+        coloresGuardados.push(cuadrado.textContent);
+    });
+
+    console.long(coloresGuardados);
+
+    botonGenerar.addEventListener("click", generarPaleta);
+
+    botonGuardar.addEventListener("click", guardarColores);
 }
