@@ -7,7 +7,7 @@ Este proyecto esta pensado para facilitar la creacion de paletas de colores para
 
 - Generacion aleatoria de paletas de colores.
 - Seleccionar la cantidad de colores (6-8-9).
-- Generacion de colores en formato: "hex-rgba".
+- Seleccionar de formato de colores: "hex-rgba".
 - Visualizacion de colores mediantes bloques.
 - Opcion para guardar paleta.
 - Opcion para eliminar paleta.
@@ -18,7 +18,7 @@ Este proyecto esta pensado para facilitar la creacion de paletas de colores para
 - CCS --> Estilo y diseño visual.
 - javaScrip --> La parte de la logica (generacion de colores y funciones de la aplicacion).
 - Git/GitHub --> Git-->(seguimiento local) GitHub-->(seguimiento y repositorio en la nube).
-- GitHub Pages --> 
+- GitHub Pages --> Publica el proyecto web en la internet usando el repositorio. 
 
 ## Estructura del proyecto
 ```text
@@ -39,3 +39,13 @@ ProyectoM1/
 └── README.md
 ```
 ## Utilizacion de la aplicacion
+
+1. Ingresar a la pagina web.
+2. Seleccionar la cantidad de colores (6-8-9).
+3. Seleccionar el formato de los colores (hex-rgba).
+4. Seleccionar el boton generar paleta de colores.
+5. Visualizar los colores aleatorios.
+6. Guardar paleta de colores.
+7. Eliminar paletas de colores. 
+
+
