@@ -6,6 +6,8 @@ const botonGenerar = document.querySelector (".generar");
 const botonGuardar = document.querySelector(".guardar");
 const generador = document.querySelector(".generador");
 
+let coloresGuardados = [];
+
 /*funciones que necesitamos:
 funcion generarHsl();
 funtion generarHex();
@@ -78,6 +80,10 @@ function generarPaleta(){
         cuadrado.classList.add("color"); /* se le agrega clase a a css */
 
         cuadrado.textContent = color; /*mostrar el codigo */
+
+        cuadrado.addEventListener("click", function(){
+            cuadrado.classList.toggle("seleccionado");
+        }); /* */
 
         generador.appendChild(cuadrado); /* se le agrega cuadrado al generador */
     }
