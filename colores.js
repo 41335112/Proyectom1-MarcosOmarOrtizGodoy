@@ -3,15 +3,19 @@
 const cantidad = document.querySelector("#cantidad");
 const formato = document.querySelector ("#formato");
 const botonGenerar = document.querySelector (".generar");
+const botonGuardar = document.querySelector(".guardar");
 const generador = document.querySelector(".generador");
 
 /*funciones que necesitamos:
 funcion generarHsl();
 funtion generarHex();
 funcion generarRgba();
-funcion generarPaleta();*/
+funcion generarPaleta();
+funcion guardarColores();
+*/
 
-/* Genera el color Hex */
+
+/* Genera el color Hsl */
 function generarHsl(){
     
     const h = Math.floor(Math.random() * 360);
@@ -80,3 +84,8 @@ function generarPaleta(){
 }       
 
 botonGenerar.addEventListener("click", generarPaleta); /*boton generar */
+
+function guardarColores(){
+
+    
+}
