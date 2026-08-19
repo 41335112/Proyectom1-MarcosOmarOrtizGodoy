@@ -38,6 +38,7 @@ ProyectoM1/
 │  
 └── README.md
 ```
+
 ## Utilizacion de la aplicacion
 
 1. Ingresar a la pagina web.

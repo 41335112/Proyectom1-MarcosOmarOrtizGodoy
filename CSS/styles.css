@@ -65,9 +65,15 @@ p1{
     color: var(--color-titulo-claro);
 }
 /* damos forma a la parte de formato y cantidad de colores */
+.contenedor{
+ width: 90%;
+ max-width: 1000px;
+ margin: auto;
+}
+
 .configuracion{
     display: flex;
-    gap: 15px;
+    gap: 20px;
     margin-bottom: 20px;
     margin-top: 25px;
     justify-content: center;
