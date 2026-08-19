@@ -7,20 +7,30 @@ const generador = document.querySelector(".generador");
 
 /*funciones que necesitamos:
 funcion generarHsl();
-funcion generarHexRgba();
+funtion generarHex();
+funcion generarRgba();
 funcion generarPaleta();*/
 
 /* Genera el color Hex */
-function generarHex(){
-    const caracteres = "0123456789ABCDEF";
+function generarHsl(){
+    
+    const h = Math.floor(Math.random() * 360);
+    const s = Math.floor(Math.random() * 101);
+    const l = Math.floor(Math.random() * 101);
 
+    return `hsl(${h}, ${s}%, ${l}%)`;
+}
+
+/*funtion generarHex(); */
+function generarHex(){
+    
+    const caracteres = "0123456789ABCDEF";
     let color = "#";
 
-    for(let i=0; i < 6; i++){
-
-        const nroAleatorio = Math.floor(Math.random() * 16);
-        color += caracteres[nroAleatorio];
+    for (let i = 0; i < 6; i++) {
+        color += caracteres[Math.floor(Math.random() * 16)];
     }
+
     return color;
 }
 
@@ -47,10 +57,14 @@ function generarPaleta(){
         
         let color;
 
-        if(formatoSeleccionado === "hex"){
-            color = generarHex();
+        if(formatoSeleccionado === "hsl"){               
+            color = generarHsl();
         }else{
-            color = generarRgba();
+            if(formatoSeleccionado === "hex"){
+                color = generarHex();               
+            }else{
+                color = generarRgba();
+            }
         }
         
         const cuadrado = document.createElement("div"); /* se crea el cuadro */
