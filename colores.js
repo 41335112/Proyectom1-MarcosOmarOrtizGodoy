@@ -6,8 +6,8 @@ const botonGenerar = document.querySelector (".generar");
 const generador = document.querySelector(".generador");
 
 /*funciones que necesitamos:
-funcion generarHex();
-funcion generarRgba();
+funcion generarHsl();
+funcion generarHexRgba();
 funcion generarPaleta();*/
 
 /* Genera el color Hex */
